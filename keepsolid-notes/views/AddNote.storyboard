@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQh-hR-Gyw">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Note View Controller-->
+        <scene sceneID="0bU-Yf-JMX">
+            <objects>
+                <viewController storyboardIdentifier="AddNoteViewController" id="GQh-hR-Gyw" customClass="AddNoteViewController" customModule="keepsolid_notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vj9-gP-IkS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hkl-Lw-lLw">
+                                <rect key="frame" x="20" y="63" width="335" height="584"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="967-pV-9qn">
+                                <rect key="frame" x="25" y="15" width="325" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hkl-Lw-lLw" firstAttribute="centerX" secondItem="Vj9-gP-IkS" secondAttribute="centerX" id="2tl-V0-UX3"/>
+                            <constraint firstItem="967-pV-9qn" firstAttribute="leading" secondItem="oCl-Ok-UFn" secondAttribute="leading" constant="25" id="4vk-0L-CYf"/>
+                            <constraint firstItem="967-pV-9qn" firstAttribute="centerX" secondItem="Vj9-gP-IkS" secondAttribute="centerX" id="9h8-Rl-uYs"/>
+                            <constraint firstItem="967-pV-9qn" firstAttribute="top" secondItem="oCl-Ok-UFn" secondAttribute="top" constant="15" id="Dfi-9e-7f7"/>
+                            <constraint firstItem="hkl-Lw-lLw" firstAttribute="top" secondItem="967-pV-9qn" secondAttribute="bottom" constant="9" id="Fir-jl-oS2"/>
+                            <constraint firstItem="oCl-Ok-UFn" firstAttribute="trailing" secondItem="hkl-Lw-lLw" secondAttribute="trailing" constant="20" id="GFe-sh-GC8"/>
+                            <constraint firstItem="oCl-Ok-UFn" firstAttribute="bottom" secondItem="hkl-Lw-lLw" secondAttribute="bottom" constant="20" id="WFW-9s-URf"/>
+                            <constraint firstItem="oCl-Ok-UFn" firstAttribute="trailing" secondItem="967-pV-9qn" secondAttribute="trailing" constant="25" id="eLv-D3-pZ6"/>
+                            <constraint firstItem="hkl-Lw-lLw" firstAttribute="leading" secondItem="oCl-Ok-UFn" secondAttribute="leading" constant="20" id="kAY-mK-pnd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oCl-Ok-UFn"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="hkl-Lw-lLw" id="Z8z-dC-wHl"/>
+                        <outlet property="titleTextField" destination="967-pV-9qn" id="Idn-NL-mF3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8R9-yl-c8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="82.3088455772114"/>
+        </scene>
+    </scenes>
+</document>

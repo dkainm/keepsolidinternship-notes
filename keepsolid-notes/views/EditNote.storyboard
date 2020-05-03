@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jaH-oe-hhT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Note View Controller-->
+        <scene sceneID="eDO-Ds-nMn">
+            <objects>
+                <viewController storyboardIdentifier="EditNoteViewController" id="jaH-oe-hhT" customClass="EditNoteViewController" customModule="keepsolid_notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tma-9t-A9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-Nf-IXL">
+                                <rect key="frame" x="20" y="63" width="335" height="584"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CJ-E7-Cbj">
+                                <rect key="frame" x="25" y="15" width="325" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3CJ-E7-Cbj" firstAttribute="leading" secondItem="XEH-fn-oaZ" secondAttribute="leading" constant="25" id="EEp-Kr-J9I"/>
+                            <constraint firstItem="3CJ-E7-Cbj" firstAttribute="centerX" secondItem="Tma-9t-A9Y" secondAttribute="centerX" id="GO6-0J-K6d"/>
+                            <constraint firstItem="dKN-Nf-IXL" firstAttribute="top" secondItem="3CJ-E7-Cbj" secondAttribute="bottom" constant="9" id="HLF-Qf-x5a"/>
+                            <constraint firstItem="XEH-fn-oaZ" firstAttribute="trailing" secondItem="3CJ-E7-Cbj" secondAttribute="trailing" constant="25" id="KUe-q7-sVS"/>
+                            <constraint firstItem="dKN-Nf-IXL" firstAttribute="centerX" secondItem="Tma-9t-A9Y" secondAttribute="centerX" id="QQc-eu-sbm"/>
+                            <constraint firstItem="3CJ-E7-Cbj" firstAttribute="top" secondItem="XEH-fn-oaZ" secondAttribute="top" constant="15" id="krh-0F-Jtq"/>
+                            <constraint firstItem="XEH-fn-oaZ" firstAttribute="bottom" secondItem="dKN-Nf-IXL" secondAttribute="bottom" constant="20" id="mfV-9H-Ily"/>
+                            <constraint firstItem="dKN-Nf-IXL" firstAttribute="leading" secondItem="XEH-fn-oaZ" secondAttribute="leading" constant="20" id="n2t-9f-fIZ"/>
+                            <constraint firstItem="XEH-fn-oaZ" firstAttribute="trailing" secondItem="dKN-Nf-IXL" secondAttribute="trailing" constant="20" id="wIA-GD-c3i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XEH-fn-oaZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="dKN-Nf-IXL" id="Py8-JZ-dei"/>
+                        <outlet property="titleTextField" destination="3CJ-E7-Cbj" id="fWL-RZ-aEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdB-Iz-TeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="-166"/>
+        </scene>
+    </scenes>
+</document>
